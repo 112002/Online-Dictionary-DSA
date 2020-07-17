@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dictionary</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ribeye+Marrow&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@mdi/font/css/materialdesignicons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/pretty-checkbox/dist/pretty-checkbox.css"
+    />
+    <link rel="icon" href="favicon.ico">
+
+    <script src="js/file.js" charset="utf-8"></script>
+  </head>
+  <body onload="hide_loading2()">
+    <div class="load_div"><img class="load" src="Ball-1.3s-200px.svg" alt=""></div>
+    <!--Pop Up-->
+    
+    <div class="algorithm">
+      <span class="choose_algoritm_heading">Choose the type(s) of algoritms :</span
+      ><br /><br />
+
+      <table>
+        <tr>
+          <td>Interpolation Search</td>
+          <td>
+            <div class="pretty p-icon p-round p-jelly edit">
+              <input type="radio" name="algoradio" id = "firstCheckBox" />
+              <div class="state p-primary">
+                <i class="icon mdi mdi-check" style="background-color:#2f3640"></i>
+                <label></label>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Jump Search</td>
+          <td>
+            <div class="pretty p-icon p-round p-jelly edit" >
+            <input type="radio" name="algoradio"  >
+            <div class="state p-primary"  >
+              <i class="icon mdi mdi-check" style="background-color:#2f3640"></i>
+              <label></label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Binary Search</td>
+          <td>
+            <div class="pretty p-icon p-round p-jelly edit">
+            <input type="radio" name="algoradio"/>
+            <div class="state p-primary">
+              <i class="icon mdi mdi-check" style="background-color:#2f3640"></i>
+              <label></label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Linear Search</td>
+          <td>
+            <div class="pretty p-icon p-round p-jelly edit">
+            <input type="radio" name="algoradio" />
+            <div class="state p-primary">
+              <i class="icon mdi mdi-check" style="background-color:#2f3640"></i>
+              <label></label>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <a href="search_meaning.html" class="algo_submit">Submit</a>
+
+    </div>
+  
+    <!--Main Page -->
+    <div class="top" style="height:850px">
+      <h1>
+        <span style="font-family: 'Ribeye Marrow', cursive;">D</span>ictionary
+      </h1>
+      <a href="know-more-about-project.html" id="know">Know more ></a>
+      <div class="search-box">
+        <form method="post" action="/uploaded">
+          <input method="post" name="input" action="/uploaded" class="input-box" type="text" id="word_input"
+            placeholder="Search" />
+          <a class="btn" onclick="callPopUp()" href="#" id="searchbtn">
+            <i class="fas fa-search" style="font-size:x-large"></i>
+          </a>
+        </form>
+        <script>
+          var input = document.getElementById("word_input");
+      
+            input.addEventListener("keyup", function (event) {
+            // Number 13 is the "Enter" key on the keyboard
+            if (event.keyCode === 13) {
+              // Cancel the default action, if needed
+              event.preventDefault();
+              // Trigger the button element with a click
+              document.getElementById("searchbtn").click();
+            }
+          });
+        </script>
+      </div>
+      <h2 id="below_search_bar">Wanna search a meaning ? ... Here you go !</h2>
+    </div>
+
+    <div class="middle" style="top:850px">
+      <p id="contri_text"><span style="font-family: 'Ribeye Marrow', cursive;">D</span>evelopers</p>
+      <table class="table_contri">
+        <tr>
+          <td class="td_contri">
+            <div
+              class="flip-container"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <div class="contri_front">
+                    <span class="contri_content_front flipoverflow"><i class="far fa-user-circle fa-3x"></i> <br> <br> Hemanth Krishna <br>19BCT0230</span>
+                    
+                    
+                  </div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <div class="contri_back"><br /><span class="contri_content_back flipoverflow"><i class="fas fa-code fa-3x"></i><br> <br> Backend</span><br /></div></div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="td_contri">
+            <div
+              class="flip-container"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <div class="contri_front">
+                    <span class="contri_content_front flipoverflow"><i class="far fa-user-circle fa-3x"></i> <br> <br>Parth Namdev <br>19BCE0440</span>
+                  </div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <div class="contri_back"><span class="contri_content_back flipoverflow"><i class="far fa-edit fa-3x"></i><br> <br> Frontend</span></div></div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="td_contri">
+            <div
+              class="flip-container"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <div class="contri_front">
+                    <span class="contri_content_front flipoverflow"><i class="far fa-user-circle fa-3x"></i> <br> <br>Aryak Roy <br>19BCE2165</span>
+                    
+                  </div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <div class="contri_back">
+                    <span class="contri_content_back flipoverflow"><i class="far fa-edit fa-3x"></i><br> <br> Frontend</span><br /></div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="td_contri">
+            <div
+              class="flip-container"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <div class="contri_front">
+                    <span class="contri_content_front flipoverflow"><i class="far fa-user-circle fa-3x"></i> <br> <br>Nupoor Raj <br>19BCE2145</span>  
+                  </div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <div class="contri_back">
+                    <span class="contri_content_back flipoverflow"><i class="fas fa-file-alt fa-3x"></i> <br> <br> Documentation <br>and <br>Research</span></div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="bottom" style="top:1350px"></div>
+  </body>
+</html>

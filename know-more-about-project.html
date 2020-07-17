@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dictionary-Know More</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ribeye+Marrow&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="favicon.ico">
+    <style>
+        h1{
+            font-weight: bold;
+        }
+        a:hover{
+        text-decoration: none;
+        }
+        .middle .container-fluid{
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+        .know-more-image{
+            width:90%;
+        }
+        #know-more-carousel{
+            margin: 100px 0;
+        }
+        .top{
+            height:1200px;
+        }
+        .middle{
+            top: 1200px;
+        }
+        .bottom{
+            top: 1700px;
+        }
+        @media (max-width: 1150px) and (min-width: 770px){
+            .middle{
+            top: 900px;
+        }
+        .bottom{
+            top: 1400px;
+        } 
+        }
+        @media (max-width: 770px){
+            .middle{
+            top: 700px;
+        }
+        .bottom{
+            top: 1200px;
+        } 
+        }
+
+    
+    </style>
+    <script src="js/file.js" charset="utf-8"></script>
+  </head>
+  <body onload="hide_loading()">
+    <div class="load_div"><img class="load" src="Ball-1.3s-200px.svg" alt=""></div>
+    <div class="top">
+      <h1>
+        <span style="font-family: 'Ribeye Marrow', cursive;">D</span>ictionary
+      </h1>
+      <a href="index.html" id="know">Home ></a>
+      <div id="know-more-carousel" class="carousel slide" data-ride="false" interval="5000">
+        <div class="carousel-inner">
+          <div class="carousel-item active container-fluid">
+            <img class="know-more-image" src="images/Slide1.PNG"  />
+          </div>
+          <div class="carousel-item container-fluid">
+            <img class="know-more-image" src="images/Slide2.PNG" >
+          </div>
+          <div class="carousel-item container-fluid">
+            <img class="know-more-image" src="images/Slide3.PNG" >
+          </div>
+          <div class="carousel-item container-fluid">
+            <img class="know-more-image" src="images/Slide4.PNG" >
+          </div>
+          <div class="carousel-item container-fluid">
+            <img class="know-more-image" src="images/Slide5.PNG" >
+          </div>
+          <div class="carousel-item container-fluid">
+            <img class="know-more-image" src="images/Slide6.PNG" >
+          </div>
+          <div class="carousel-item container-fluid">
+            <img class="know-more-image" src="images/Slide7.PNG" >
+          </div>
+          <div class="carousel-item container-fluid">
+            <img class="know-more-image" src="images/Slide8.PNG" >
+          </div>
+          <div class="carousel-item container-fluid">
+            <img class="know-more-image" src="images/Slide9.PNG" >
+          </div>
+          <div class="carousel-item container-fluid">
+            <img class="know-more-image" src="images/Slide10.PNG" >
+          </div>
+          <div class="carousel-item container-fluid">
+            <img class="know-more-image" src="images/Slide11.PNG" >
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#know-more-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>          
+        </a>
+        <a class="carousel-control-next" href="#know-more-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+    <div class="middle">
+      <p id="contri_text"><span style="font-family: 'Ribeye Marrow', cursive;">D</span>evelopers</p>
+      <div class="container-fluid">
+      <table class="table_contri">
+        <tr>
+          <td class="td_contri">
+            <div
+              class="flip-container"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <div class="contri_front">
+                    <span class="contri_content_front"><i class="far fa-user-circle fa-3x"></i> <br> <br> Hemanth Krishna <br>19BCT0230</span>
+                    
+                    
+                  </div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <div class="contri_back"><br /><span class="contri_content_back"><i class="fas fa-code fa-3x"></i><br> <br> Backend</span><br /></div></div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="td_contri">
+            <div
+              class="flip-container"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <div class="contri_front">
+                    <span class="contri_content_front"><i class="far fa-user-circle fa-3x"></i> <br> <br>Parth Namdev <br>19BCE0440</span>
+                  </div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <div class="contri_back"><span class="contri_content_back"><i class="far fa-edit fa-3x"></i><br> <br> Frontend</span></div></div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="td_contri">
+            <div
+              class="flip-container"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <div class="contri_front">
+                    <span class="contri_content_front"><i class="far fa-user-circle fa-3x"></i> <br> <br>Aryak Roy <br>19BCE2165</span>
+                    
+                  </div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <div class="contri_back">
+                    <span class="contri_content_back"><i class="far fa-edit fa-3x"></i><br> <br> Frontend</span><br /></div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="td_contri">
+            <div
+              class="flip-container"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <div class="contri_front">
+                    <span class="contri_content_front"><i class="far fa-user-circle fa-3x"></i> <br> <br>Nupoor Raj <br>19BCE2145</span>  
+                  </div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <div class="contri_back">
+                    <span class="contri_content_back"><i class="fas fa-file-alt fa-3x"></i> <br> <br> Documentation <br>and <br>Research</span></div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    </div>
+    <div class="bottom"></div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
